@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 This project is broken down into different phases.
 
 In general this application can be broken down into many parts, these parts can be easily translated into an online application as we go.
@@ -21,3 +22,9 @@ Display these results to the user. If there are no results, tell the user there 
 New Concepts: Heroku, Sinatra, Git, ERB, Web Forms, Get, Post
 Instead of terminal, we are now going to make a web form to take in all of the information.
 
+=======
+datingapp
+=========
+
+A sample dating application in ruby
+>>>>>>> eed9cf231faacd0d711788f72f78e75532ec1a56
