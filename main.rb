@@ -48,6 +48,8 @@ end
 #Read in JSON file containing existing user data
 file_data = JSON.parse(IO.read ("sample.json"))
 
+puts file_data.class
+
 users = file_data["users"]
 
 # all_users is an array of user objects
