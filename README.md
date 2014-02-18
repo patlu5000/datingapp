@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 This project is broken down into different phases.
 
 In general this application can be broken down into many parts, these parts can be easily translated into an online application as we go.
@@ -27,4 +26,3 @@ datingapp
 =========
 
 A sample dating application in ruby
->>>>>>> eed9cf231faacd0d711788f72f78e75532ec1a56
