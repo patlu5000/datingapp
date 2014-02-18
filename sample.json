@@ -1,0 +1,18 @@
+{
+"users": [
+{
+  "username": "pesto88",
+  "email": "patlu08@gmail.com",
+  "gender": "male",
+  "looking_for": "female",
+  "color": "blue"
+},
+{
+  "username": "pkl239",
+  "email": "pat@prost.io",
+  "gender": "male",
+  "looking_for": "female",
+  "color": "green"
+}
+]
+}
