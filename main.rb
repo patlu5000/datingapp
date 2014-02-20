@@ -30,7 +30,7 @@ class User
 
   def inspect
     instance_variables.each do |k,v|
-      puts "#{k}: #{instance_variable_get(k)}"
+      puts "#{k[1..-1]}: #{instance_variable_get(k)}"
     end
   end
 
@@ -61,7 +61,7 @@ class User
   end
 
   def is_compatible?(user2)
-    return (@gender == user2.lookingfor) && (@looking_for == user2.gender) && (@color == user2.color)
+    return (@gender == user2.looking_for) && (@looking_for == user2.gender) && (@color == user2.color)
   end
 
   # Returns an array of username matches,
@@ -120,7 +120,7 @@ if (has_user)
   puts "Do you want to change your info? (y or n)"
   input = gets.chomp.downcase
 
-  # If they inputs y, ask them... about every attribute again.
+  # If they inputs y, ask them about every attribute again.
   update_hash = {}
   if(input == "y")
     puts "What is your email?"
@@ -139,13 +139,13 @@ if (has_user)
     # Update their hash, and save it to the file.
     current_user.update(update_hash)
   end
-
 # If you don't have the user... ask the user to set up their preferences
 else
+  puts "We don't have that username, let's set up a new account.\n"
   new_user_hash = {}
   new_user_hash["username"] = username
   puts "What is your email?"
-  email = gets.chomp-----------
+  email = gets.chomp
   new_user_hash["email"] = email
   puts "What is your gender?"
   gender = gets.chomp
@@ -158,12 +158,23 @@ else
   new_user_hash["color"] = color
 
   new_user = User.new(new_user_hash)
-
+  current_user = new_user
 end
 
-  # Might be a good time to run a little test to see if you saved the file correctly
 
-  # Display any matches using find_compatible
-  # matches = current_user.find_compatible
+# Might be a good time to run a little test to see if you saved the file correctly
+
+# Find all the compatible matches for that user, if there are none, print out that.
+all_matches = current_user.find_compatible(all_users)
+
+if all_matches.size > 0
+
+  all_matches.each_with_index do |match, i|
+    puts "Match #{i+1}:\n"
+    match.inspect
+  end
+else
+  puts "Sorry there are no matches right now, check again soon!"
+end
 
 

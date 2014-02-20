@@ -2,7 +2,7 @@ This project is broken down into different phases.
 
 In general this application can be broken down into many parts, these parts can be easily translated into an online application as we go.
 
-##Phase 1: Terminal based dating application - 2/18
+## Phase 1: Terminal based dating application - 2/18
 ###New Concepts: Making and Saving a file, JSON
   * Download or copy and paste this JSON file. It contains existing users, who have registered already. Your first goal is to import this JSON file into a ruby program and convert it into a hash which you can use.
     * Hint: file_data = JSON.parse(IO.read ("sample.json")) sets file\_data as a Hash of Array of Hashes, with each hash representing a user.
@@ -17,7 +17,7 @@ In general this application can be broken down into many parts, these parts can 
   * Re run your program. Try to login as an existing user. If your program prints out the current user's email, gender, what gender they are seeking, and their favorite color, that's it for phase 1.
 
 
-##Phase 2: Customization and matching
+## Phase 2: Customization and matching
   * Currently your program only takes in a few things from the user. Change your program to ask and record other information from the user. Perhaps you can ask them if they have a pet, what kind of pet, what their favorite food is... it's really up to you. Think about what makes people compatible.
     * A good idea would be to limit the amount of choices the user has, to maybe 9 at most. Perhaps when you ask "What is your favorite food?" You can ask - What is your favorite type of food? (Chinese, Italian, American, Japanese, Mexican, Mediterranean ... )
 
@@ -41,15 +41,8 @@ In general this application can be broken down into many parts, these parts can 
 
 
 
-Phase 3: Making it Object Oriented (Not done)
+## Phase 3: Making it Object Oriented (Not done)
 New Concepts: Heroku, Sinatra, Git, ERB, Web Forms, Get, Post
 Instead of terminal, we are now going to make a web form to take in all of the information.
 
 
-
-
-=======
-datingapp
-=========
-
-A sample dating application in ruby
