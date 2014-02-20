@@ -1,18 +1,1 @@
-{
-"users": [
-{
-  "username": "pesto88",
-  "email": "patlu08@gmail.com",
-  "gender": "male",
-  "looking_for": "female",
-  "color": "blue"
-},
-{
-  "username": "pkl239",
-  "email": "pat@prost.io",
-  "gender": "male",
-  "looking_for": "female",
-  "color": "green"
-}
-]
-}
+{"users":[{"username":"pesto88","email":"pkl@pkl.com","gender":"male","looking_for":"female","color":"blue"},{"username":"ppp","email":"pat@pat.com","gender":"male","looking_for":"female","color":"blue"},{"username":"pkl239","email":"ppp@pp.com","gender":"male","looking_for":"female","color":"blue"}]}
