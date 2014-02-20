@@ -4,6 +4,8 @@ This project is broken down into different phases.
 
 In general this application can be broken down into many parts, these parts can be easily translated into an online application as we go.
 
+Currently this repo has a sample answer up to phase 2. You have 2 choices, either make your app from scratch, or spend time understanding the code here and make changes to it.
+
 ## Phase 1: Terminal based dating application - 2/18
 ###New Concepts: Making and Saving a file, JSON
   * Download or copy and paste this JSON file. It contains existing users, who have registered already. Your first goal is to import this JSON file into a ruby program and convert it into a hash which you can use.
